@@ -22,6 +22,13 @@ let heightJohn = 1.95;
 bmiJohn = massJohn / (heightJohn * heightJohn);
 
 
+// 3. Create a Boolean variable 'markHigherBMI' containing information about
+// whether Mark has a higher BMI than John.
+
+let markHigherBMI = bmiMark > bmiJohn;
+
+
+console.log("Test1:   " , bmiMark, bmiJohn, markHigherBMI);
 
 
 
