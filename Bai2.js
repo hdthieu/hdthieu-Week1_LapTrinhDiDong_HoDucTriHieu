@@ -13,16 +13,30 @@ console.log(averageDolphins);
 // 2. Compare the team's average scores to determine the winner of the competition,
 // and print it to the console. Don't forget that there can be a draw, so test for that
 // as well (draw means they have the same average score)
-let avaerageKoalas = scoreKoalas.reduce((x,y) => x + y) / scoreKoalas.length;
-averageDolphins > avaerageKoalas ? console.log(`Dolphins win (${averageDolphins} vs. ${avaerageKoalas})`) : console.log(`Koalas win (${avaerageKoalas} vs. ${averageDolphins})`);
+let averageKoalas = scoreKoalas.reduce((x,y) => x + y) / scoreKoalas.length;
+averageDolphins > averageKoalas ? console.log(`Dolphins win (${averageDolphins} vs. ${averageKoalas})`) : console.log(`Koalas win (${averageKoalas} vs. ${averageDolphins})`);
     
 // 3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a
 // team only wins if it has a higher score than the other team, and the same time a
 // score of at least 100 points. 
 // Hint: Use a logical operator to test for minimum score, as well as multiple else-if blocks 
 
+if(averageDolphins > averageKoalas && averageDolphins >= 100 ){
+    console.log("Dolphins win")
+}else if(averageKoalas > averageDolphins && averageKoalas >= 100){
+    console.log("Koalas win")
+}
+
+
 
 
 // 4. Bonus 2: Minimum score also applies to a draw! So a draw only happens whenSS
-// both teams have the same score and both have a score greater or equal 100
-// points. Otherwise, no team wins the trophy
+// both teams have the same score and both have a score greater or equal 100 points.
+//  Otherwise, no team wins the trophy
+
+if(averageDolphins === averageKoalas && averageDolphins >= 100 && averageKoalas >= 100){
+    console.log("Draw")
+}else{
+    console.log("No team wins the trophy")
+}
+
