@@ -16,14 +16,13 @@ console.log(averageDolphins);
 let avaerageKoalas = scoreKoalas.reduce((x,y) => x + y) / scoreKoalas.length;
 averageDolphins > avaerageKoalas ? console.log(`Dolphins win (${averageDolphins} vs. ${avaerageKoalas})`) : console.log(`Koalas win (${avaerageKoalas} vs. ${averageDolphins})`);
     
-
-
 // 3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a
 // team only wins if it has a higher score than the other team, and the same time a
-// score of at least 100 points. Hint: Use a logical operator to test for minimum
-// score, as well as multiple else-if blocks 
+// score of at least 100 points. 
+// Hint: Use a logical operator to test for minimum score, as well as multiple else-if blocks 
 
 
-// 4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when
+
+// 4. Bonus 2: Minimum score also applies to a draw! So a draw only happens whenSS
 // both teams have the same score and both have a score greater or equal 100
 // points. Otherwise, no team wins the trophy
